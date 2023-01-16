@@ -13,7 +13,7 @@ steps:
 - script: 
   displayName: 'Run a one-line script'
 
-- script: gcc hello.c -o hello
-         ./hello
+- script:  gcc hello.c -o hello
+          ./hello
     
   displayName: 'Run a multi-line script'
