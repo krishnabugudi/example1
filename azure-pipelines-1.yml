@@ -10,10 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: 
-  displayName: 'Run a one-line script'
-
 - script:  gcc hello.c -o hello
           ./hello
     
-  displayName: 'Run a multi-line script'
+  displayName: 'This is example'
