@@ -4,13 +4,13 @@
 # https://aka.ms/yaml
 
 trigger:
-- main
+- hello.c
 
 pool:
   vmImage: ubuntu-latest
-
-steps:
-- script:  gcc hello.c -o hello
+task: Bash@3
+  steps:
+  - script:  gcc hello.c -o hello
           ./hello
     
-  displayName: 'This is example'
+    displayName: 'This is example'
